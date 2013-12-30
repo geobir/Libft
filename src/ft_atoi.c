@@ -42,3 +42,24 @@ int     ft_atoi(const char *str)
     }
     return (atoi * neg);
 }
+
+char    *ft_itoa(int nb)
+{
+    char    *s;
+    int     i;
+
+    if (nb < 0 && (nb *= -1))
+        *s++ = '-';
+
+    while (nb)
+    {
+        i = ft_entlen(nb);
+        *s = (nb / ft_pow(10, i - 1)) + '0';
+        nb %= ft_pow(10, i - 1);
+        s =+ 1;
+    }
+}
+
+
+
+
