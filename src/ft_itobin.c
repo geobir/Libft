@@ -2,11 +2,11 @@
 
 #include "../libft.h"
 
-char    *ft_itobin(int n)
+char	*ft_itobin(int n)
 {
-    char    *tmp;
-    char    *bin;
+	char	*tmp;
+	char	*bin;
 
-    tmp = "";
-    return (bin);
+	tmp = "";
+	return (bin);
 }
